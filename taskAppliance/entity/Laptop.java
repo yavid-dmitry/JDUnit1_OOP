@@ -7,14 +7,15 @@ public class Laptop extends Appliance{
 	private int systemMemory;
 	private double cpu;
 	private int displayInchs;
-	public Laptop(double battery, String os, int systemMemory, double cpu, int displayInchs) {
-		super();
+	public Laptop(String name, double battery, String os, int systemMemory, double cpu, int displayInchs) {
+		super(name);
 		this.battery = battery;
 		this.os = os;
 		this.systemMemory = systemMemory;
 		this.cpu = cpu;
 		this.displayInchs = displayInchs;
 	}
+	
 	public double getBattery() {
 		return battery;
 	}
@@ -85,7 +86,7 @@ public class Laptop extends Appliance{
 	}
 	@Override
 	public String toString() {
-		return "Notebook" + battery + ", os=" + os + ", systemMemory=" + systemMemory + ", cpu=" + cpu
+		return this.getName() + "Notebook" + battery + ", os=" + os + ", systemMemory=" + systemMemory + ", cpu=" + cpu
 				+ ", displayInchs=" + displayInchs;
 	}
 

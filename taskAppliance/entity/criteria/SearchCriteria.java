@@ -6,7 +6,7 @@ public final class SearchCriteria {
 		POWER, WEIGHT, CAPACITY, DEPTH, HEIGHT, WIDTH
 	}
 	
-	public static enum Notebook{
+	public static enum Laptop{
 		BATTERY, OS, SYSTEM_MEMORY, CPU, DISPLAY_INCHS
 	}
 	
